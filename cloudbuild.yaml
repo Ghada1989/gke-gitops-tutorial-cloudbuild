@@ -30,6 +30,8 @@ steps:
   - '-t'
   - 'me-central2-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild:$SHORT_SHA'
   - '.'
+  options:
+  logging: CLOUD_LOGGING_ONLY
 
 # This step pushes the image to Artifact Registry
 # The PROJECT_ID and SHORT_SHA variables are automatically
